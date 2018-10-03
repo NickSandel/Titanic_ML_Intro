@@ -1,0 +1,18 @@
+Titanic data notes initial thoughts:
+- Train name is slightly deceiving as it'll need splitting into train and test sets so I can use labelled data to verify the training
+- Age has gaps - probably want to use a median or mean. Perhaps even paying attention to gender
+- Want to pull out mr, mrs, miss, master from the name as I think it could help - might help pin down missing ages to band into children/adult flags?
+- Ticket does not appear to be useful (could be wrong!)
+- Parch can help determine children as they're more likely to have parents on board than older people - could their survival rates be higher?
+- Classification problem, doubt linear things will help at all
+- pclass and fare are likely well correlated
+- probably worth turning things like age and fare into categories
+- Really wonder if embarked influences survival?
+- Cabin is sparsely populated - I expect it's related to ticket price and class. Perhaps a default value here
+
+Project steps:
+- Look at the data and attempt some analysis steps using what was learned in Chapter 2 (copy!)
+- Check out train/test split
+- Transformations
+- Attempt some ML algorithms
+- Read classification chapter and examples as I suspect that'll be most relevant for this problem
